@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- Copyright © Jens Erik Nielsen, jens.nielsen@gmail.com. All rights reserved. -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -20,7 +21,7 @@
     </div>
   </header>
 
-  <p class="updated">Last updated September 24, 2026</p>
+  <p class="updated">Last updated October 3, 2026</p>
 
   <div class="summary">
     <p><strong>The short version:</strong> Your coins, unlocks, stats and settings stay on your device. We have no servers, no accounts and no analytics of our own.</p>
@@ -61,18 +62,19 @@
       <li>an occasional full-screen ad when you leave the result screen of a one-device match: not before your third match, and never more than once every three minutes. Never in a Play Nearby match, and never between the final hit and the result.</li>
       <li>only if you choose it, a short video that doubles the coins from the match you just played</li>
     </ul>
+    <p>Don't want ads at all? A one-time <strong>Remove Ads</strong> purchase turns every one of them off for good. After that, Google's ad SDK isn't started and none of the data below is collected. The purchase itself is handled entirely by Apple. We only learn from the App Store that this device's Apple Account owns it.</p>
     <p>Showing ads means Google's SDK collects some data. This is the exact list, taken from the privacy declarations that Google's SDKs ship with, not from a general description:</p>
     <div class="tbl-wrap">
       <table>
         <tr><th>Data</th><th>Linked to your identity?</th><th>Used to track you across apps?</th></tr>
         <tr><td>Advertising identifier (IDFA)</td><td>Yes</td><td><span class="pill warn">Yes</span></td></tr>
-        <tr><td>Ads you've seen (advertising data)</td><td>Yes</td><td>No</td></tr>
+        <tr><td>Ads you've seen (advertising data)</td><td>Yes</td><td><span class="pill warn">Yes</span></td></tr>
         <tr><td>How you interact with the app (product interaction)</td><td>Yes</td><td>No</td></tr>
-        <tr><td>Approximate location, from your IP address</td><td>Yes</td><td>No</td></tr>
+        <tr><td>Approximate location, from your IP address</td><td>Yes</td><td><span class="pill warn">Yes</span></td></tr>
         <tr><td>Crash, performance and other diagnostic data</td><td>No</td><td>No</td></tr>
       </table>
     </div>
-    <p>The advertising identifier is the only item used to track you across other companies' apps. That's why iOS asks your permission (App Tracking Transparency) before it can be used. Ads still show if you say no. Rocket Duel always requests non-personalized ads, whatever you answer.</p>
+    <p>The advertising identifier, the ads you've seen and your approximate location are all treated as used to track you across other companies' apps, because Google's ad service can combine ad-measurement data across the apps that use it, even where we don't ask it to. That's why iOS asks your permission (App Tracking Transparency) before it can be used. Ads still show if you say no. Rocket Duel always requests non-personalized ads, whatever you answer.</p>
     <p>If you're in the EU, UK or Switzerland, Google's consent form asks for your choice the first time it's needed, before any of this happens. You can change that choice at any time from <span class="label">AD PRIVACY</span> in the top-left corner of the main menu.</p>
   </section>
 
